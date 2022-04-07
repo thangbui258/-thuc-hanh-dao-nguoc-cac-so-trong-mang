@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dao nguoc cac so trong mang</title>
+</head>
+<body>
+<p id="in"></p>
+    <script>
+        var x = [-3,5,1,3,2,10];
+        let a;
+        let first = 0;
+        let last = 5;
+        while (first<last) {
+            a = x[first];
+            x[first] = x[last];
+            x[last] = a;
+            first++;
+            last--;
+        }
+        document.getElementById("in").innerHTML = x;
+
+
+    </script>
+
+</body>
+</html>
